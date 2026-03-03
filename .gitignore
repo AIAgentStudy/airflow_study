@@ -1,0 +1,52 @@
+﻿# 운영체제/에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 파이썬 캐시/가상환경
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.venv/
+venv/
+env/
+
+# 테스트/리포트 산출물
+.coverage
+htmlcov/
+*.log
+
+# 비밀 정보/환경 변수
+.env
+.env.*
+*.pem
+*.key
+
+# Airflow 로컬 실행 산출물
+airflow.db
+airflow-webserver.pid
+airflow-scheduler.pid
+standalone_admin_password.txt
+webserver_config.py
+
+# Airflow Docker/로컬 런타임 경로(실수 업로드 방지)
+logs/
+airflow-local/
+
+# 필요 시 사용(런타임 폴더를 저장소 루트에 둘 때만 주석 해제)
+# dags/
+# config/
+# plugins/
+
+# 대용량 데이터/임시파일
+*.sqlite
+*.db
+*.tmp
+*.bak
