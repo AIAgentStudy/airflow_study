@@ -16,7 +16,7 @@ with DAG(
     tags=["study", "week1"],
 ) as dag:
     t1 = BashOperator(task_id="print_date", bash_command="date")
-    t2 = BashOperator(task_id="say_hello", bash_command="echo 안녕하세요_에어플로우")
+    t2 = BashOperator(task_id="say_hello", bash_command="echo 안녕_에어플로우")
     t3 = BashOperator(task_id="say_bye", bash_command="echo 잘가_에어플로우")
 
     t1 >> t2 >> t3
