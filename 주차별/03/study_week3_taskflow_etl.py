@@ -1,4 +1,12 @@
-﻿from datetime import datetime, timedelta
+﻿"""3주차 학습용 DAG: TaskFlow API와 XCom 계약을 익히는 파일.
+
+학습 포인트:
+- @dag/@task 기반 TaskFlow 스타일 작성법
+- 태스크 간 데이터 전달(XCom)의 타입/키 계약이 깨질 때의 실패 양상
+- Jinja 렌더링 오류와 런타임 오류를 구분해 읽는 로그 분석 습관
+"""
+
+from datetime import datetime, timedelta
 
 from airflow.decorators import dag, task
 from airflow.exceptions import AirflowFailException
@@ -66,3 +74,5 @@ def study_taskflow_etl():
 
 
 study_taskflow_etl()
+
+

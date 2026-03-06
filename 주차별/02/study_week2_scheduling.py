@@ -1,4 +1,12 @@
-﻿import os
+﻿"""2주차 학습용 DAG: 스케줄링과 실행 제어를 실습하는 파일.
+
+학습 포인트:
+- scenario/scenarios conf로 다양한 실패/스킵/타임아웃 상황 주입
+- TriggerRule로 분기/조인 시 downstream 상태 전파 이해
+- 파일 누락, 품질 저하, 지연 처리 같은 운영성 이슈 재현과 복구 연습
+"""
+
+import os
 import time
 from datetime import datetime, timedelta
 
@@ -227,3 +235,5 @@ with DAG(
         >> t_summarize
         >> end
     )
+
+
